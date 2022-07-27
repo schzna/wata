@@ -1,0 +1,39 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+drag-viewer {
+    box-shadow: 3px 3px 3px 2px rgb(167, 167, 167) inset;
+    background-color: rgb(233, 233, 233);
+    box-shadow: inset;
+    box-sizing: border-box;
+    border: solid 2px;
+    border-radius: 5px;
+    width: 95%;
+    height: 95%;
+    padding: 0;
+    overflow: hidden;
+    cursor: move;
+}
+
+drag-viewer > * {
+    user-select: none;
+    margin: 30px;
+    position: relative;
+}
+
+drag-viewer block {
+    background-color: rgb(247, 247, 247);
+    border: solid 2px;
+    border-radius: 5px;
+    display: block;
+    width: 150px;
+    height: 100px;
+}
