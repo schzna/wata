@@ -22,7 +22,7 @@ window tab-list {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 10%;
+    height: 3em;
     border-bottom: solid 1px;
 }
 
@@ -64,4 +64,19 @@ window tab {
 tab h1 {
     margin: 0;
     font-weight: 300;
+}
+
+tab-container {
+    position: relative;
+}
+
+tab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+tab[selected="true"] {
+    visibility: visible;
 }

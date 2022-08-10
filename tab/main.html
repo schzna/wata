@@ -7,43 +7,24 @@
     <body>
         <window>
             <tab-list>
-                <tab-name selected="true">general</tab-name>
-                <tab-name>citation</tab-name>
-                <tab-name>reference</tab-name>
+                <tab-name tab-id="1" selected="true">Tab1</tab-name>
+                <tab-name tab-id="2">Tab2</tab-name>
+                <tab-name tab-id="3">Tab3</tab-name>
             </tab-list>
-            <tab name="tab1">
-                <h1>
-                    Private Circuits: Securing Hardware against Probing Attacks
-                </h1>
-                <ul>
-                    <li>Yuval Ishai</li>
-                    <li>Amit Sahai</li>
-                    <li>David Wagner</li>
-                </ul>
-                <p>
-                    Abstract. Can you guarantee secrecy even if an adversary can
-                    eavesdrop on your brain? We consider the problem of
-                    protecting privacy in circuits, when faced with an adversary
-                    that can access a bounded number of wires in the circuit.
-                    This question is motivated by side channel attacks, which
-                    allow an adversary to gain partial access to the inner
-                    workings of hardware. Recent work has shown that side
-                    channel attacks pose a serious threat to cryptosystems
-                    implemented in embedded devices. In this paper, we develop
-                    theoretical foundations for security against side channels.
-                    In particular, we propose several efficient techniques for
-                    building private circuits resisting this type of attacks. We
-                    initiate a systematic study of the complexity of such
-                    private circuits, and in contrast to most prior work in this
-                    area provide a formal threat model and give proofs of
-                    security for our constructions.
-                </p>
-                <p>
-                    Keywords: cryptanalysis, side channel attacks, provable
-                    security, secure multi-party computation, circuit
-                    complexity.
-                </p>
-            </tab>
+            <tab-container>
+                <tab id="1" selected="true">
+                    <h1>Tab1</h1>
+                    <p>You see Tab1.</p>
+                </tab>
+                <tab id="2">
+                    <h1>Tab2</h1>
+                    <p>This is Tab2.</p>
+                </tab>
+                <tab id="3">
+                    <h1>Tab3</h1>
+                    <p>Tab3 is displayed.</p>
+                </tab>
+            </tab-container>
         </window>
     </body>
 </html>
